@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="app.js"></script>
+    <title>Polmodoro</title>
+</head>
+<body>
+
+    <div id="main-content"> 
+
+        <div class="side-img">
+            <img id="polly-img" src="media/Polly.png">
+        </div>
+
+        <div class="vertical-content">
+            <img id="header-img" src="media/polmodoro_title.png">
+
+            
+
+            <div id="worktime-btns"> 
+                <button class="work-btn" id="fifteenm-btn" onclick="setWorkTime(15)" >15m</button>
+                <button class="work-btn" id="twentym-btn" onclick="setWorkTime(20)">20m</button>
+                <button class="work-btn" id="twentyfivem-btn" onclick="setWorkTime(25)" >25m</button>
+            </div>
+
+            <div id="breaktime-btns"> 
+                <button class ="break-btn" id="break-15m-btn" onclick="setBreakTime(5)" >5m</button>
+                <button class ="break-btn" id="break-20m-btn" onclick="setBreakTime(10)">20m</button>
+                <button class ="break-btn" id="break-25m-btn" onclick="setBreakTime(15)" >15m</button>
+            </div>
+
+            
+            <button id="start-btn" onclick="start()"> START</button>
+            
+
+            <div id="timer-inlay"> 
+                <p id="timer">00:00</p>
+            </div>
+            
+
+            <div class="prompt"> 
+                <h4 id="time-q"> how long do you want to work for? </h4>
+                <p id="activity-msg">Time for Work!</p>
+            </div>
+
+            
+                <button id="next-btn" onclick="flipFlop()"></button>
+            
+
+            
+
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
